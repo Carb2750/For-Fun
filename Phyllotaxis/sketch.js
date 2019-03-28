@@ -5,7 +5,7 @@ let r;
 const c = 5;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   background(0);
 }
@@ -31,5 +31,5 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(window.innerWidth, window.innerHeight);
+  resizeCanvas(windowWidth, windowHeight);
 }

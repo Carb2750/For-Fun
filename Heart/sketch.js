@@ -4,7 +4,7 @@ d = true;
 
 
 function setup() {
-	createCanvas(window.innerWidth, window.innerHeight);
+	createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -40,5 +40,5 @@ function draw() {
 }
 
 function windowResized() {
-	resizeCanvas(window.innerWidth, window.innerHeight);
+	resizeCanvas(windowWidth, windowHeight);
 }
