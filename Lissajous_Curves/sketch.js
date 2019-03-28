@@ -1,0 +1,27 @@
+let a = 3;
+let b = 0;
+const r = 50;
+let x;
+let y;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  translate(200, 200);
+  
+  noFill();
+  stroke(0);
+  beginShape();
+  for(let t  = 0; t < TWO_PI; t += 0.01){
+    x = r * (1 * sin(a * t + PI / 2));
+    y = r * (1 * cos(t * b));
+    vertex(x, y);
+  }
+  
+  endShape();
+  a += 0.01;
+  b += 0.01;
+}
