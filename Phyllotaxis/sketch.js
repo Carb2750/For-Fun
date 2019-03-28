@@ -5,7 +5,7 @@ let r;
 const c = 5;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(window.innerWidth, window.innerHeight);
   angleMode(DEGREES);
   background(0);
 }
@@ -28,4 +28,8 @@ function draw() {
   ellipse(x, y, 5);
   
   n += 1;
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
 }

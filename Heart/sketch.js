@@ -4,12 +4,12 @@ d = true;
 
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
 	background(0);
-	translate(200, 200);
+	translate(width / 2, height / 2);
 
 	fill(200, 10, 10);
 	stroke(255);
@@ -37,4 +37,8 @@ function draw() {
 		vertex(x, y);
 	}
 	endShape();
+}
+
+function windowResized() {
+	resizeCanvas(window.innerWidth, window.innerHeight);
 }

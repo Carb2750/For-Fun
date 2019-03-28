@@ -1,16 +1,16 @@
 let a = 3;
 let b = 0;
-const r = 50;
+const r = 150;
 let x;
 let y;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
   background(220);
-  translate(200, 200);
+  translate(width / 2, height / 2);
   
   noFill();
   stroke(0);
@@ -24,4 +24,8 @@ function draw() {
   endShape();
   a += 0.01;
   b += 0.01;
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
 }
